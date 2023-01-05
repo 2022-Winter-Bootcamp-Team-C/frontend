@@ -1,0 +1,66 @@
+@font-face {
+	font-family: "LINE_Bd";
+	src: url("../assets/fonts/LINESeedKR-Bd.ttf");
+  }
+  @font-face {
+	font-family: "LINE_Rg";
+	src: url("../assets/fonts/LINESeedKR-Rg.ttf");
+  }
+  @font-face {
+	font-family: "LINE_Th";
+	src: url("../assets/fonts/LINESeedKR-Th.ttf");
+  }
+.logo {
+    margin-top: 27px;
+    margin-left : 27px;
+}
+.main{
+    margin-top : 10%;
+}
+.main-one{
+    width: 100vw;
+    font-family: "LINE_Rg";
+    position: relative;
+    left: 35%;
+    font-size: 23px;
+}
+
+.main-two{
+    width: 100vw;
+    font-family: "LINE_Bd";
+    position: relative;
+    left: 25%;
+	color: rgb(38, 96, 255);
+    font-size: 48px;
+    line-height: 5%;
+}
+.main-three{
+    width: 100vw;
+    font-family: "LINE_Bd";
+    position: relative;
+    left: 25%;
+    font-size: 40px;
+}
+.main-four{
+    width: 100vw;
+    font-family: "LINE_Rg";
+    position: relative;
+    left: 25%;
+    font-size: 20px;
+}
+.main-five{
+    width: 423px;
+    height: 328px;
+    margin-left: 60%;
+    margin-top: -30%;
+
+}
+body {
+    width : 1536px;
+    height : 864px;
+}
+
+
+
+
+
