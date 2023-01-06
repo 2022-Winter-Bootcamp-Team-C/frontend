@@ -1,31 +1,29 @@
 import { Swiper, SwiperSlide } from "swiper/react"; //Swiper
-import SwiperCore, { Pagination } from "swiper";
+import SwiperCore, { Pagination, Autoplay } from "swiper";
 import "swiper/css"; 
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import React from "react";
-import Logo from '../assets/images/logo.svg';
 import Sub_one from '../assets/images/side_one.svg';
 import Sub_two from '../assets/images/side_two.svg';
 import Sub_three from '../assets/images/side_three.svg';
 import Sub_four from '../assets/images/side_four.svg';
-import "./home.css";
+import "./IntroSwiper.css";
 
-SwiperCore.use([Pagination]);
+SwiperCore.use([Autoplay,Pagination]);
 
-function Home(props){
+function IntroSwiper(props){
     return(
      
     <div>
-      <div className="logo">
-          <img src={Logo} alt="Logo"/>
-     </div>
-
      <Swiper
       spaceBetween={50}
       slidesPerView={1}
-      scrollbar={{ draggable: true }}
+      autoplay={{
+          "delay": 3500,
+          "disableOnInteraction": false
+        }}
       pagination={{ clickable: true }}
       >
 
@@ -72,19 +70,4 @@ function Home(props){
     );
 }
 
-export default Home;
-
-{/* <div className="main"> 
-<p className="main-one">#잃어버린 #텅장을 #찾아서</p>
-<p className="main-two"> SHOW ME THE MONEY </p>
-
-<p className="main-three">줄줄새는 내돈<br/>
-꽉 잡아줄 나만의 가계부</p>
-
-<p className="main-four">매일 나가는 지출, 한 눈에 보고싶다면<br/>
-가계부를 작성해보세요.<br/>
-한눈에 보기 쉬워요!</p>   
-
-<img src={sub} alt="SubPicture" className="main-five"/>
-
-</div> */}
+export default IntroSwiper;

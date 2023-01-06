@@ -1,12 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import Home from './components/home'
+import Index from './pages/index'
+import Login from './pages/login'
+import { useMediaQuery } from "react-responsive"
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 
 function App() {
+
+const isPc = useMediaQuery({ query: "(min-width: 1024px)" });
+const isLaptop = useMediaQuery({ query: "(min-width: 768px)" });
+const perPageSize = isPc ? "pc" : isLaptop ? "laptop" : "mobile";
+
   return (
     <div className="App">
-      <Home />
+    
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Index/>}/>
+        <Route path='login' element={<Login/>}/>
+      </Routes>
+    </BrowserRouter>
+          {/* {perPageSize}
+          {isPc && <Index />} */}
+
     </div>
   );
 }
