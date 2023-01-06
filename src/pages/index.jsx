@@ -2,7 +2,8 @@ import React from "react";
 import Nav from "../components/Nav"
 import IntroSwiper from "../components/IntroSwiper";
 import Button from "../components/Button"
-function index(props){
+
+const index = () => {
     return(
     <div>
         <Nav></Nav>

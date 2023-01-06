@@ -1,13 +1,16 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 import "./Button.css"
-import { Link } from 'react-router-dom'
 
-function Button(props){
-
-
+const Button = () => {
+  const navigate = useNavigate();
+  const navigateToMove = () => {
+    navigate("/login");
+  };
+    
   return (
     <div className='button_position'>
-        <button className="button_style">시작하기</button>
+        <button className="button_style" onClick={navigateToMove}>시작하기</button>
     </div>
     )
 }
