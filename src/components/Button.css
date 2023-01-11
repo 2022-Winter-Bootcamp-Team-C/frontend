@@ -1,0 +1,30 @@
+@font-face {
+	font-family: "LINE_Bd";
+	src: url("../assets/fonts/LINESeedKR-Bd.ttf");
+}
+  @font-face {
+	font-family: "LINE_Rg";
+	src: url("../assets/fonts/LINESeedKR-Rg.ttf");
+}
+  @font-face {
+	font-family: "LINE_Th";
+	src: url("../assets/fonts/LINESeedKR-Th.ttf");
+}
+.button_position{
+    margin-top: 0%;
+    margin-left: 6%;
+    
+}
+.button_style{
+    margin-left:32%;
+    width: 411px;
+    height: 64px;
+    background-color : #2660FF;
+    box-shadow: 3px 3px 3px 3px #CDDAFF;
+    border-color: #2660FF;
+    border-style: none;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-family: "LINE_Bd";
+    color: white; 
+}

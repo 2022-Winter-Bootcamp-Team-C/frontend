@@ -1,0 +1,19 @@
+.ml{
+    margin-top: 12%;
+}
+Form {
+    margin: 0 auto;
+    width: 350px;
+}
+Button{
+    margin-top: 5%;
+    margin-left: 0%;
+    width: 350px;
+}
+h1{
+    height: 80px;
+    font-weight: 600;
+    font-size: 50px;
+    margin-left: 30%;
+    color:#2660FF;
+}
