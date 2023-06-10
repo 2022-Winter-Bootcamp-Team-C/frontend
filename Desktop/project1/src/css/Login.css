@@ -1,0 +1,40 @@
+.ml {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  .mb-1 {
+    margin-left: 11.5%;
+    margin-top:15.5%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 300px;
+  }
+  
+  .mb-2 {
+    margin-left: 11.5%;
+    margin-top:8%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 300px;
+  }
+
+  .btn-primary.one, .btn-primary.two{
+    margin-top: 8.5%;
+    margin-left: 11.5%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2bb654;
+    color: #fff;
+    width: 300px;
+    cursor: pointer;
+  }
+  
